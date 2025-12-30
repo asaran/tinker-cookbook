@@ -1,7 +1,6 @@
 """Train a guess-the-number policy with a discriminator-shaped reward.
 
-This script mirrors the DICE-style PPO flow from the `asaran/llm-dice` repo's
-`ppo_dice_single_turn.py`, adapted to the guess-number multiplayer RL task.
+This script implements DICE-style PPO flow adapted to the guess-number multiplayer RL task.
 The discriminator is a lightweight torch model that learns to spot high-quality
 (closer-to-correct) guesses and supplies an auxiliary reward term.
 """
