@@ -377,7 +377,7 @@ class DiceGuessNumberDatasetBuilder(RLDatasetBuilder):
             renderer=renderer,
             batch_size=self.batch_size,
             group_size=self.train_group_size,
-            discriminator=self.discriminator,
+            discriminator=discriminator,
             reward_scale=self.reward_scale,
             discriminator_steps=self.discriminator_steps,
         )
@@ -386,7 +386,7 @@ class DiceGuessNumberDatasetBuilder(RLDatasetBuilder):
             renderer=renderer,
             batch_size=len(test_numbers),
             group_size=self.test_group_size,
-            discriminator=self.discriminator,
+            discriminator=discriminator,
             reward_scale=self.reward_scale,
             discriminator_steps=self.discriminator_steps,
         )
