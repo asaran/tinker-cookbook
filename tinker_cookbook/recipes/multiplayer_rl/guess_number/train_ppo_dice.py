@@ -3,6 +3,10 @@
 This script implements DICE-style PPO flow adapted to the guess-number multiplayer RL task.
 The discriminator is a lightweight torch model that learns to spot high-quality
 (closer-to-correct) guesses and supplies an auxiliary reward term.
+
+Test run:
+    `python -m tinker_cookbook.recipes.multiplayer_rl.guess_number.train_ppo_dice \
+    log_path=checkpoints/llm-dice/guess_number`
 """
 
 import asyncio
